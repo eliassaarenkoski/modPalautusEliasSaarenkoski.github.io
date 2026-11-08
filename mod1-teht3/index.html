@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tehtävä 3 mod 01 </title>
+<meta charset="UTF-8" />
+<script src="teht3.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+</body>
+<p id="target"></p>
+<p id="target1"></p>
+
+<pre>"use strict";
+    let luku1 = parseInt(prompt("anna ensimmäinen luku: "));
+    let luku2 = parseInt(prompt("anna ensimmäinen luku: "));
+    let luku3 = parseInt(prompt("anna ensimmäinen luku: "));
+
+let yhteensa = luku1 + luku2 + luku3
+let keskiarvo = yhteensa / 3;
+let tulo = luku1 * luku2 * luku3 ;
+    document.querySelector("#target").innerHTML = `Lukujen summa on : ${yhteensa }
+    lukujen tulo on ${tulo} ja keskiarvo on  ${keskiarvo}`</pre>
+</html>

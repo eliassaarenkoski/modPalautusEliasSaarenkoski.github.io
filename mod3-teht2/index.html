@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tehtävä 2 mod 03 </title>
+<meta charset="UTF-8" />
+<script src="mod3teht2.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+</body>
+<p id="target"></p>
+<pre>let osallistujat = [];
+let maara = Number(prompt("Kuinka monta osallistujaa?"));
+for (let i = 0; i < maara; i++) {
+    let nimi = prompt("Syötä osallistujan nimi:");
+    osallistujat.push(nimi);
+}
+osallistujat.sort();
+let lista = "<ol>";
+for (let i = 0; i < osallistujat.length; i++) {
+    lista += "<li>" + osallistujat[i] + "</li>";
+}
+lista += "</ol>";
+document.getElementById("target").innerHTML = lista;</pre>
+</html>

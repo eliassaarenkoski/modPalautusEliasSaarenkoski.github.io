@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tehtävä 4 mod 03 </title>
+<meta charset="UTF-8" />
+<script src="mod3teht4.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+</body>
+<p id="target"></p>
+<pre>let luvut = [];
+let luku;
+while (luku !== 0) {
+    luku = Number(prompt("Syötä jokin luku. 0 lopettaa kysymisen : "));
+    if (luku !== 0) {
+        luvut.push(luku);
+    }
+}
+luvut.sort((a, b) => b - a);
+for (let i = 0; i < luvut.length; i++) {
+    console.log(luvut[i]);
+}</pre>
+</html>

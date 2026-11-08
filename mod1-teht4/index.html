@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tehtävä 4 mod 01 </title>
+<meta charset="UTF-8" />
+<script src="teht4.js" defer></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+</body>
+<p id="target"></p>
+<pre>"use strict";
+let numero = Math.floor(Math.random() * 4) ;
+let nimi = prompt("anna nimesi :")
+let tupa;
+if (numero === 0) {
+    tupa = "Rohkelikko";
+}
+else if (numero === 1) {
+    tupa = "Luihuinen";
+}
+else if (numero === 2) {
+    tupa = "Puuskupuh";
+}
+else if (numero === 3) {
+    tupa = "Korpinkynsi";
+}
+document.querySelector("#target").innerHTML =
+    `${nimi}, sinä olet ${tupa}.`;</pre>
+</html>
